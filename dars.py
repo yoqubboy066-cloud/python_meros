@@ -1,4 +1,4 @@
- # class Phone:
+# class Phone:
 #     def  __init__(self,yili,madel,rangi,xotirasi,narxi):
 #         self.yili=yili
 #         self.madel=madel
@@ -421,3 +421,87 @@
 # uy=Uy(2,8)
 # print(bino.get_info())
 # print(uy.get_info2())
+
+# 21
+# class Mashina:
+#     def __init__(self,nomi,vazifasi,narx):
+#         self.nom=nomi
+#         self.vazifa=vazifasi
+#         self.narx=narx
+
+#     def get_info(self):
+#         return f"Mashina nomi : {self.nom}\nMashina : {self.vazifa}\nMashina narxi : {self.narx}"
+    
+# class Nexi(Mashina):
+#     def __init__(self, nomi, vazifasi,narx):
+#         super().__init__(nomi, vazifasi,narx)
+
+#     def get_info(self):
+#         return f"Nexi : {self.nom}\nNexi : {self.vazifa}\nNexi narxi : {self.narx}"
+    
+# mashina=Mashina("kir yuvish mashinasi","kir bolgan kiyimlarni yuvadi","120$")
+# nexi=Nexi("nexi 3","odamni uzoqini yaqin qilish","190000$")
+# print(mashina.get_info())
+# print(nexi.get_info())
+
+# 22
+# class Kitob:
+#     def __init__(self,kitob_muallifi,kitob_nomi,kitob_janri,kitob_sahifa_soni,kitob_narxi):
+#         self.muallif=kitob_muallifi
+#         self.nomi=kitob_nomi
+#         self.janri=kitob_janri
+#         self.sahifa=kitob_sahifa_soni
+#         self.narxi=kitob_narxi
+#     def get_info(self):
+#         return f"kitob muallifi : {self.muallif}\nkitob nomi : {self.nomi}\nkitob janrlari : {self.janri}\nkitobdagi sahofalar soni : {self.sahifa}\nkitob narxi ; {self.narxi}"
+
+# class ElektronKitob(Kitob):
+#     def __init__(self, kitob_muallifi, kitob_nomi, kitob_janri, kitob_sahifa_soni, kitob_narxi):
+#         super().__init__(kitob_muallifi, kitob_nomi, kitob_janri, kitob_sahifa_soni, kitob_narxi)
+
+#     def get_info(self):
+#         return f"kitob muallifi : {self.muallif}\nkitob nomi : {self.nomi}\nkitob janri : {self.janri}\nkitobdagi sahifa soni : {self.sahifa}\nkitob narxi : {self.narxi}"
+
+# kitob=Kitob("yoqubboy","tarbiya","tarbiyaviy","130bet","bepul")
+# elektronkitob=ElektronKitob("yoqubboy","1984","jangari",600,"100ming som")
+# print(kitob.get_info())
+# print(elektronkitob.get_info())
+# 23
+# class Mashina:
+#     def __init__(self,nomi,vazifasi,narxi,):
+#         self.nomi=nomi
+#         self.vazifa=vazifasi
+#         self.narx=narxi
+
+#     def get_info(self):
+#         return f"Mashina nomi : {self.nomi}\nMashina vazifasi : {self.vazifa}\nMashina narxi : {self.narx}"
+
+# class ElektroAvto(Mashina):
+#     def __init__(self, nomi, vazifasi, narxi,fast_charch):
+#         super().__init__(nomi, vazifasi, narxi)
+#         self.fast=fast_charch
+
+#     def get_info(self):
+#         return f"ElektroAvto nomi : {self.nomi}\nelektroavto vazifasi : {self.vazifa}\nelektroavto narxi : {self.narx}\nelektroavto zaryad olish tezligi : {self.fast}"
+
+# mashina=Mashina("kir yuvish mashinasi","krilarni yuvadi","190$")
+# elektroavto=ElektroAvto("elektr mashina","uzoqni yaqin qilish","300000$",2)  
+# print(mashina.get_info())
+# print(elektroavto.get_info()) 
+
+# 24
+# 25
+# class Hayvon:
+#     def __init__(self,turi):
+#         self.turi=turi
+
+#     def get_info(self):
+#         return f"hayvon turi : {self.turi}"
+    
+# class Qush(Hayvon):
+#     def __init__(self, turi,uchish):
+#         super().__init__(turi)
+#         self.uchish=uchish
+    
+#     def get_info(self):
+#         return f"Qush turi : {self.turi}\nQush uchishi : {self.uchish}"
