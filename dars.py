@@ -505,3 +505,95 @@
     
 #     def get_info(self):
 #         return f"Qush turi : {self.turi}\nQush uchishi : {self.uchish}"
+    
+    
+# hayvon=Hayvon("noyob turdan")
+# qush=Qush("o'tta noyob","zor uchadi")
+# print(hayvon.get_info())
+# print(qush.get_info())
+
+# 26             
+# class Maktab:
+#     def __init__(self,oquvchi_soni):
+#         self.oquvchi=oquvchi_soni
+
+#     def get_info(self):
+#         return f"Maktabda shuna o'quvchi o'qiydi : {self.oquvchi}"
+    
+# class Sinf(Maktab):
+#     def __init__(self, oquvchi_soni,sinf_nomi):
+#         super().__init__(oquvchi_soni)
+#         self.sinf=sinf_nomi
+    
+#     def get_info(self):
+#         return f"sinfda shuncha o'quvchi o'qiydi : {self.oquvchi}\nsinf nomi : {self.sinf}"
+#     maktab=Maktab(400)
+#     sinf=Sinf("24","9a")
+#     print(maktab.get_info())
+#     print(sinf.get_info())
+
+# 27
+# class Avto:
+#     def info(self,rangi):
+#         self.rang=rangi
+#         print("")
+    
+# class Mercedes(Avto):
+#     def info(self):
+#         return f"Mercedes rangi"
+
+# class Chevrolet(Avto):
+#     def info(self):
+#         return f"Chevrolet rangi "
+        
+
+# avtolar=[Mercedes(),Chevrolet()]
+# for avto in avtolar:
+#     print(avto.info())
+
+
+# 28
+# class Texnika:
+#     def __init__(self,turi,rangi):
+#         self.tur=turi
+#         self.rang=rangi
+
+#     def get_info(self):
+#         return f"texnika turi : {self.tur}\ntexnika : {self.rang}"
+    
+# class Printer(Texnika):
+#     def __init__(self, turi, rangi):
+#         super().__init__(turi, rangi)
+        
+#     def get_info(self):
+#         return f"printer turi : {self.tur}\nprinter rangi : {self.rang}"
+    
+# texnika=Texnika("Artel","qora")
+# printer=Printer("artel","qora")
+
+# print(texnika.get_info())
+# print(printer.get_info())
+
+
+# 29
+# class Sportchi:
+#     def __init__(self,ismi,familyasi,yoshi):
+#         self.ism=ismi
+#         self.familya=familyasi
+#         self.yosh=yoshi
+
+#     def get_info(self):
+#         return f"sportchi ismi : {self.ism}\nsportchi familyasi : {self.familya}\nsportchi yoshi : {self.yosh}"
+    
+# class Futbolchi(Sportchi):
+#     def __init__(self, ismi, familyasi, yoshi,gollar_soni):
+#         super().__init__(ismi, familyasi, yoshi)
+#         self.gol=gollar_soni
+
+#     def get_info(self):
+#         return f"futbolchi ismi : {self.ism}\nfutbolchi familyasi : {self.familya}\nfutbolchi yoshi : {self.yosh}\nfutbolchi urgan golllar soni : {self.gol}"
+    
+# sportchi=Sportchi("yoqubboy","bagandimkov",9999)
+# futbolchi=Futbolchi("yoqubboy","bagandikov",9999,999)
+# print(sportchi.get_info())
+# print(futbolchi.get_info())
