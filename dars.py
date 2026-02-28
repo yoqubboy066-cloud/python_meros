@@ -597,3 +597,148 @@
 # futbolchi=Futbolchi("yoqubboy","bagandikov",9999,999)
 # print(sportchi.get_info())
 # print(futbolchi.get_info())
+
+# 30
+# class Student:
+#     def __init__(self,ismi,familyasi,yoshi,kursi):
+#         self.ism=ismi
+#         self.familya=familyasi
+#         self.yosh=yoshi
+#         self.kurs=kursi
+
+#     def get_info(self):
+#         return f"student ismi : {self.ism}\nstudent familyasi : {self.familya}\nstudent yoshi : {self.yosh}\nstudent {self.kurs} da o'qiydi"
+
+# class Talaba(Student):
+#     def __init__(self, ismi, familyasi, yoshi, kursi):
+#         super().__init__(ismi, familyasi, yoshi, kursi)
+
+#     def get_info(self):
+#         return f"talaba ismi : {self.ism}\ntalaba familyasi : {self.familya}\ntalaba yoshi : {self.yosh}\ntalaba {self.kurs} da o'qiydi"
+
+# student=Student("yoqubboy","bagandikov",20,2)
+# talaba=Talaba("Valijon","Yarashov",22,3)
+# print(student.get_info())
+# print(talaba.get_info())
+
+# 31
+# class Ota:
+#     def __init__(self,ism,yosh,kasb):
+#         self.ism=ism
+#         self.yosh=yosh
+#         self.kasb=kasb
+    
+#     def get_info(self):
+#         return f"Otaning ismi : {self.ism}\nOtaning yoshi : {self.yosh}\nOtaning kasbi : {self.kasb}"
+    
+# class Bola(Ota):
+#     def __init__(self, ism, yosh, oqish):
+#         super().__init__(ism, yosh, oqish)
+    
+#     def get_info(self):
+#         return f"Bolaning ismi : {self.ism}\nBolaning yoshi : {self.yosh}\nBolaning o'qish darajasi : {self.kasb}"
+
+# ota=Ota("yoqubboy",45,"IT ustoz")
+# bola=Bola("ulug'bek",16,"Past")  
+# print(ota.get_info())
+# print(bola.get_info()) 
+
+# 32
+# class Ota:
+#     def __init__(self,ism,familya,yosh):
+#         self.ism=ism
+#         self.familya=familya
+#         self.yosh=yosh
+
+#     def get_info(self):
+#         return f"Otaning ismi : {self.ism}\nOtaning familyasi : {self.familya}\nOtaning yoshi :{self.yosh}"
+    
+# class Bola(Ota):
+#     def __init__(self, ism, familya, yosh):
+#         super().__init__(ism, familya, yosh)
+
+#     def get_info(self):
+#         return f"Bolaning ismi : {self.ism}\nBolaning familyasi : {self.familya}\nBolaning yoshi : {self.yosh}"
+    
+# ota=Ota("yoqubboy","bagandikov",67)
+# bola=Bola("ulug'bek","yarashov",16)
+# print(ota.get_info())
+# print(bola.get_info())
+    
+# 34
+# class Ota:
+#     def __init__(self,ism,familya,yosh):
+#         self.ism=ism
+#         self.familya=familya
+#         self.yosh=yosh
+
+#     def get_info(self):
+#         return f"Otaning ismi : {self.ism}\nOtaning familyasi : {self.familya}\nOtaning yoshi :{self.yosh}"
+    
+# class Bola(Ota):
+#     def __init__(self, ism, familya, yosh):
+#         super().__init__(ism, familya, yosh)
+
+#     def get_info(self):
+#         return f"Bolaning ismi : {self.ism}\nBolaning familyasi : {self.familya}\nBolaning yoshi : {self.yosh}"
+    
+# ota=Ota("yoqubboy","bagandikov",67)
+# bola=Bola("Ulug'bek","Yarashov",-0)
+# print(ota.get_info())
+# print(bola.get_info())
+
+# 35
+# class Hayvon:
+#     def __init__(self,nomi,rangi):
+#         self.nomi=nomi
+#         self.rang=rangi
+
+#     def get_info(self):
+#         return f"Hayvon nomi : {self.nomi}\nHayvon terisining rangi : {self.rang}"
+    
+# class Mushuk(Hayvon):
+#     def __init__(self, nomi, rangi):
+#         super().__init__(nomi, rangi)
+    
+#     def get_info(self):
+#         return f"Mushuk nomi : {self.nomi}\nMushuk  rangi : {self.rang}"
+    
+# class Baliq(Hayvon):
+#     def __init__(self, nomi, rangi):
+#         super().__init__(nomi, rangi)
+
+#     def get_info(self):
+#         return f"Baliq nomi : {self.nomi}\nBaliq rangi : {self.rang}"
+    
+# hayvon=Hayvon("it","sori")
+# mushuk=Mushuk("mishiq","qora aralash oq")
+# baliq=Baliq("oltin baliq","oltin rang")
+
+# print(hayvon.get_info())
+# print(mushuk.get_info())
+# print(baliq.get_info())
+
+# 36
+# class Kompaniya:
+#     def __init__(self,nomi,ishlash_soxasi):
+#         self.nom=nomi
+#         self.ishlash=ishlash_soxasi
+
+#     def get_info(self):
+#         return f"Kompaniya nomi : {self.nom}\nKompaniya ishlash : {self.ishlash}"
+
+# class IT_Kompaniya(Kompaniya):
+#     def __init__(self, qayerda, ishchilar_soni):
+#         super().__init__(qayerda, ishchilar_soni)
+
+#     def get_info(self):
+#         return f" IT_Kompaniya joylashuvi : {self.nom}\nIT_Kompaniyada ishchilar soni : {self.ishlash}"
+    
+# kompaniya=Kompaniya("lenova","kompyuter ishlab chiqaradi")
+# iT_Kompaniy=IT_Kompaniya("xorazmda ",110)
+# print(kompaniya.get_info())
+# print(iT_Kompaniy.get_info())
+
+
+
+
